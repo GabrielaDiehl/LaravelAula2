@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/atividades/{id}', 'AtividadeController@show');
 Route::get('/atividades', 'AtividadeController@index');
 
+
+Route::get('/mensagens/{id}', 'mensagensController@show');
+Route::get('/mensagens', 'mensagensController@index');
