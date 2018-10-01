@@ -9,3 +9,5 @@
 	<a href="/mensagens/{{$mensagens->id}}/delete">Deletar</a> 
 	<br>
 @endforeach
+
+{{ $mensagens->links() }}
